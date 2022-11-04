@@ -1,7 +1,7 @@
 {
-  "name": "nueva-carpeta",
+  "name": "Tercera PreEntrega",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tercera entrega del proyecto del curso de desarrollo web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "watch-css":"nodemon -e scss -x \"npm run build-css\"" 
 
   },
-  "author": "",
+  "author": "Santiago T. Medina",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.3",
