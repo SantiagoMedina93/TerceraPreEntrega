@@ -1,0 +1,158 @@
+.footer{
+    @include props-flex(row, center, center);
+    @include medidas-generales(100%, auto, 0px, 0px);
+}
+
+.footerContenedor{
+    @include props-flex(row, space-between, flex-start);
+    @include medidas-generales(80%, auto, 0px, 0px);
+}
+
+.footerRedes{
+    @include props-flex(column, center, center);
+    @include medidas-generales(20%, auto, 0px, 0px);
+
+    @include fondo-contenedor;
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li{
+        list-style:none;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    h2{
+        @include h2-estilo; 
+    }
+
+    a{
+        @include props-grid(1, 25% 75%);
+        grid-template-areas: 
+        "imagenRedes textoRedes";
+
+        margin: 5px;
+        color: black;
+        text-decoration: none;
+    }
+
+    p{
+        grid-area: textoRedes;
+
+        justify-self: flex-start;
+        align-self: center;
+        margin: 0px;
+        font-size: 20px;
+        color: azure;
+    }
+
+    img{
+        grid-area: imagenRedes;
+
+        justify-self: flex-end;
+        align-self: center;
+        width: 45%;
+        margin-right: 10px;
+    }
+
+
+}
+
+.footerJuegos{
+    @include props-flex(column, center, center);
+    width: 25%;
+    height: auto;
+
+    @include fondo-contenedor;
+
+    h2{
+        @include h2-estilo;
+    }
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li{
+        list-style:none;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    a{
+        @include props-grid(4, 30% 70%);
+        grid-template-areas: 
+        "imagenJuegos  textoJuegos";
+
+        color: black;
+        text-decoration: none;
+    }
+
+    p{
+        grid-area: textoJuegos;
+
+        justify-self: flex-start;
+        align-self: center;
+        font-size: 20px;
+        margin: 0px;
+        color: azure;
+    }
+
+    img{
+        grid-area: imagenJuegos;
+
+        justify-self: flex-end;
+        align-self: center;
+        width: 45%;
+        margin-right: 10px;
+    }
+}
+
+.footerContacto{
+    @include props-flex(column, center, center);
+    /* arriba, derecha, abajo, izquierda */
+    @include medidas-generales(50%, auto, 0px 0px 20px 0px ,0px 15px 0px 15px);
+   
+    @include fondo-contenedor;
+
+    h2{
+        @include h2-estilo;
+    }
+
+    h3{
+        text-align: justify;
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        color: azure;
+    }
+
+    ul{
+        padding-left: 25px;
+    }
+
+    li{
+        text-align: justify;
+        margin-bottom: 5px;
+        list-style: disc;
+        color: azure;
+    }
+
+    div{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+}

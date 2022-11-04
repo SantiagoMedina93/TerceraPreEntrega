@@ -1,0 +1,34 @@
+@mixin medidas-generales ($width, $height ,$margin ,$padding){
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}
+
+
+@mixin props-flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin props-grid($rows, $columns){
+    display: grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+}
+
+@mixin fondo-contenedor {
+    border-radius: 15px;
+    background-color: rgba(75, 75, 75, 0.6);
+    box-shadow: 10px 5px 5px black;
+}
+
+@mixin h2-estilo {
+    text-align: center;
+    border-radius: 8px;
+    background-color: azure;
+    margin: 15px;
+    padding: 10px 25px 10px 25px;
+}

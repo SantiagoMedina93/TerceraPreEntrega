@@ -1,0 +1,85 @@
+.mainInicio{
+    @include props-flex(column, center, center);
+    @include medidas-generales(80%, auto, 0px, 0px);
+    font-family: Poppins;
+
+    p{
+        text-align: justify; 
+        color: azure;
+        font-size: 25px;
+        text-indent: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.textoImagenInicio{
+    /* AGREGAR VARIABLE */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(75, 75, 75);
+    box-shadow: 10px 5px 5px black;
+
+    @include props-grid(4, 20%);
+    grid-template-areas: 
+    "header header header header header header"
+    "texto1 texto1 texto1 texto1 imagen1 imagen1"
+    "texto2 texto2 texto2 texto2 imagen1 imagen1"
+    "texto3 texto3 texto3 texto3 texto3 texto3"
+    "texto3 texto3 texto3 texto3 texto3 texto3";
+
+    h1{
+        grid-area: header;
+
+        margin-bottom: 15px;
+        font-size: 50px;
+        color: azure;
+        border-bottom: 2px solid rgb(20, 20, 20);
+    }
+    
+    p:nth-child(2){
+        grid-area: texto1;
+    }
+    
+    p:nth-child(3){
+        grid-area: texto2;
+    }
+    
+    /* ERROR ACA */
+    p:nth-child(5){
+        grid-area: texto3;
+        
+    }
+    
+    img{
+        grid-area: imagen1;
+
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        justify-self: center;
+        align-self: center;
+    }
+
+
+
+}
+
+.textoInicio{
+    @include props-flex(column, center, center);
+    /* AGREGAR VARIABLE */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(75, 75, 75);
+    box-shadow: 10px 5px 5px black;
+    
+    iframe{
+        @include medidas-generales(80%, 60vh, 0px, 0px);
+        border-radius: 15px;
+    }
+
+}

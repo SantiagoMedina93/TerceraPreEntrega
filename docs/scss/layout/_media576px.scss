@@ -1,0 +1,52 @@
+@media (max-width: 576px){
+
+    /*------------- INICIO -------------*/ 
+    .textoImagenInicio h1{
+        font-size: 35px;
+    }
+    /*------------- INICIO -------------*/ 
+
+    /*--------- HISTORIA ---------*/
+    .articuloHistoria h2{
+        font-size: 25px;
+    }
+    /*--------- HISTORIA ---------*/
+
+    /*------------- JEFES -------------*/
+    .tituloJefes h2{
+        font-size: 30px;
+        img{
+            width: 12%;
+        }
+    }
+
+    .articulosJefes iframe{
+        width: 100%;
+    }
+    /*------------- JEFES -------------*/
+
+    /*--------- PRODUCTOS ---------*/
+    .asideProductos h2{
+        font-size: 30px;
+    }
+
+    .listaAsideProductos a{
+        font-size: 20px;
+        width: auto;
+    }
+    /*--------- PRODUCTOS ---------*/
+
+
+    /* ----- FOOTER ----- */
+    .footerContenedor p{
+        font-size: 15px;
+    }
+    .footerRedes{
+        width: 90%;
+    }
+    .footerJuegos{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    /* ----- FOOTER ----- */
+}

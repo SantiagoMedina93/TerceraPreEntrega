@@ -1,0 +1,28 @@
+.header{
+    background-image: url(../assets/img/header/Banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.head {
+    a{
+        @include props-flex(row, center, center);
+        @include medidas-generales(100%, auto, 0px, 0px)
+    }
+
+    img{
+        width: 40%;
+    }
+}
+
+.nav{
+    @include props-flex(row, center, none);
+    padding-bottom: 15px;
+}
+
+.navContenedor{
+    @include medidas-generales(80%, auto, 0px, 0px);
+    background-color: rgba(255,255,255, 0.8);
+    border: 1px solid black;
+    border-radius: 10px;
+}

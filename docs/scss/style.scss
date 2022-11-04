@@ -1,0 +1,18 @@
+@import "./base/reset";
+@import "./base/typo";
+@import "./utilities/mixins";
+
+@import "./layout/main";
+@import "./layout/header";
+@import "./layout/mainInicio";
+@import "./layout/mainHistoria";
+@import "./layout/mainEscenarios";
+@import "./layout/mainJefes";
+@import "./layout/mainProductos";
+@import "./layout/footer";
+
+
+@import "./layout/media1200px";
+@import "./layout/media992px";
+@import "./layout/media768px";
+@import "./layout/media576px";

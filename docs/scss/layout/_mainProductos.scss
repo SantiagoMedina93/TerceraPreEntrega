@@ -1,0 +1,105 @@
+.mainProductos{
+    @include props-flex(row, center, auto);
+    width: 80%;
+    font-family: Poppins;
+}
+
+.listaAsideProductos{
+    @include props-flex(column, center, auto);
+    padding: 0px;
+}
+
+.asideProductos{
+    @include fondo-contenedor;
+    width: 20%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    h2{
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 15px;
+        color: azure;
+        border-bottom: 2px solid rgba(225, 225, 225, 0.8);
+        text-align: center;
+    }
+
+    ul{
+        list-style: none;
+        li{
+            padding-bottom: 20px;
+        }
+    }
+
+    a{
+        @include props-flex(column, center, center);
+        @include medidas-generales(70%, auto, 0px auto, 10px);
+        
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        background: white;
+        color: #444;
+        transition: all 300ms;
+
+        &:hover{
+            background: #444;
+            color: #eee;
+        }
+    }
+}
+
+.articuloProductos{
+    @include props-flex(row, space-evenly, center);
+    @include fondo-contenedor;
+    flex-wrap: wrap;
+
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    
+    a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+
+        &:visited {
+            color: black,
+        }
+    }
+}
+
+.contenedorProductos{
+    @include props-flex(column, space-evenly, center);
+    @include medidas-generales(180px, 220px, 0px, 0px);
+    margin-bottom: 20px;
+
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgb(95, 95, 95);
+
+    figure{
+        @include props-flex(row, center, center);
+        margin-bottom: 5px;
+        img{
+            width: 75%;
+            border-bottom: 2px solid gray;
+            padding: 5px;
+        }
+    }
+
+    div{
+        @include props-flex(row, center, center);
+    }
+}
+
+.imgAlterada figure img{
+    width: 85%;
+}
+
+.imgAlterada div p{
+    margin-top: 15px;
+}

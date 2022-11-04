@@ -1,0 +1,13 @@
+@media (max-width: 1200px){
+    .textoImagenInicio{
+        grid-template-areas: 
+        "header header header header header header"
+        "texto1 texto1 texto1 texto1 imagen1 imagen1"
+        "texto2 texto2 texto2 texto2 texto2 texto2"
+        "texto3 texto3 texto3 texto3 texto3 texto3";
+        
+        p{
+            font-size: 25px;
+        }
+    }
+}

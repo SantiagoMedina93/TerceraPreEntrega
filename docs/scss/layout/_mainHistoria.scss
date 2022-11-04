@@ -1,0 +1,44 @@
+.mainHistoria{
+    @include props-flex(column, center, center);
+    @include medidas-generales(80%, auto, 0px, 0px);
+    
+}
+
+.articuloHistoria{
+    @include props-flex(column, center, auto);
+    @include fondo-contenedor; 
+    font-family: Poppins;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    h2{
+        /* AGREGAR MIXIN */
+        color: azure;
+        border-bottom: 2px solid rgb(20, 20, 20);
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    p{
+        /* AGREGAR MIXIN */
+        color: azure;
+        text-align: justify;
+        line-height: 30px;
+        text-indent: 10px;
+        font-size: 20px;
+        margin-bottom: 15px;
+        padding-left: 5px;
+    }
+}
+
+.imgHistoria figure{
+    @include props-flex(row, space-around, auto);
+    margin-bottom: 15px;
+
+    img{
+        width: 40%;
+        border-radius: 10px;
+    }
+}
